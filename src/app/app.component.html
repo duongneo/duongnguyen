@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <input type="text" [(ngModel)]="id" />
+    <button style="padding-left: 10px" type="button" (click)="getAll()">
+      Send Request
+    </button>
+  </div>
+</div>
+
+<div *ngFor="let result of ketquathuc">
+  <label>Cau So : {{ result.cauSo + 1 }}</label>
+  <label style="padding-left: 50px">Dap An : {{ result.dapAn }}</label>
+</div>
